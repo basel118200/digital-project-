@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Meet our expert dermatologists specializing in medical and cosmetic dermatology">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Our Doctors - Dermatology Department</title>
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Updated Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Updated Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom styles -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-heart-pulse me-2"></i>Dermatology Clinic
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary" href="contact.html">
+                            <i class="bi bi-calendar-check me-2"></i>Book Appointment
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Doctors Header -->
+    <header class="page-header py-5 mb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Meet Our Expert Team</h1>
+                    <p class="lead">Experienced dermatologists committed to your skin health</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Doctors Section -->
+    <section class="doctors-detail py-5">
+        <div class="container">
+            <!-- Doctors Introduction -->
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-primary text-uppercase fw-bold mb-2">Our Team</p>
+                    <h2 class="display-5 fw-bold mb-3">Meet Our Expert Dermatologists</h2>
+                    <p class="lead text-muted">Board-certified professionals dedicated to your skin health</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+
+                    <div class="card doctor-card h-100 overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <div class="bg-gradient-primary text-white text-center p-4 position-relative">
+                                <div class="position-absolute start-0 top-0 w-100 h-100 opacity-10" style="background: url('images/pattern.svg') no-repeat center/cover;"></div>
+                                <div class="doctor-avatar mb-3">
+                                    <div class="rounded-circle bg-white p-3 d-inline-flex">
+                                        <i class="bi bi-person-circle display-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <h3 class="h4 mb-1">Dr. Sarah Johnson</h3>
+                                    <p class="mb-0 opacity-75">Board Certified Dermatologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-award text-primary me-2"></i>
+                                    <h5 class="mb-0">Specializations</h5>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Acne Treatment</span>
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Psoriasis</span>
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Skin Cancer</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-mortarboard text-primary me-2"></i>
+                                    <h5 class="mb-0">Education</h5>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        MD from Harvard Medical School
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        Dermatology Residency at Mayo Clinic
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0 bg-white p-4">
+                            <button class="btn btn-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#drJohnsonModal">
+                                <i class="bi bi-person-lines-fill me-2"></i>View Full Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card doctor-card h-100 overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <div class="bg-gradient-primary text-white text-center p-4 position-relative">
+                                <div class="position-absolute start-0 top-0 w-100 h-100 opacity-10" style="background: url('images/pattern.svg') no-repeat center/cover;"></div>
+                                <div class="doctor-avatar mb-3">
+                                    <div class="rounded-circle bg-white p-3 d-inline-flex">
+                                        <i class="bi bi-person-circle display-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <h3 class="h4 mb-1">Dr. Michael Chen</h3>
+                                    <p class="mb-0 opacity-75">Cosmetic Dermatology Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-award text-primary me-2"></i>
+                                    <h5 class="mb-0">Specializations</h5>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Botox</span>
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Laser Treatment</span>
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Chemical Peels</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-mortarboard text-primary me-2"></i>
+                                    <h5 class="mb-0">Education</h5>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        Stanford University Medical School
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        Advanced Cosmetic Training
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0 bg-white p-4">
+                            <button class="btn btn-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#drChenModal">
+                                <i class="bi bi-person-lines-fill me-2"></i>View Full Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card doctor-card h-100 overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <div class="bg-gradient-primary text-white text-center p-4 position-relative">
+                                <div class="position-absolute start-0 top-0 w-100 h-100 opacity-10" style="background: url('images/pattern.svg') no-repeat center/cover;"></div>
+                                <div class="doctor-avatar mb-3">
+                                    <div class="rounded-circle bg-white p-3 d-inline-flex">
+                                        <i class="bi bi-person-circle display-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <h3 class="h4 mb-1">Dr. Emily Rodriguez</h3>
+                                    <p class="mb-0 opacity-75">Pediatric Dermatologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-award text-primary me-2"></i>
+                                    <h5 class="mb-0">Specializations</h5>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Pediatric Dermatology</span>
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Eczema</span>
+                                    <span class="badge rounded-pill bg-primary-subtle text-primary">Allergies</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-mortarboard text-primary me-2"></i>
+                                    <h5 class="mb-0">Education</h5>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        Columbia University Medical
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        Pediatric Dermatology Fellowship
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0 bg-white p-4">
+                            <button class="btn btn-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#drRodriguezModal">
+                                <i class="bi bi-person-lines-fill me-2"></i>View Full Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Modals -->
+    <div class="modal fade" id="drJohnsonModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-primary text-white border-0 px-4 py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white p-2 me-3">
+                            <i class="bi bi-person-circle text-primary h3 mb-0"></i>
+                        </div>
+                        <div>
+                            <h5 class="modal-title mb-1">Dr. Sarah Johnson</h5>
+                            <p class="mb-0 opacity-75">Board Certified Dermatologist</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <span class="badge bg-primary-subtle text-primary me-2">15+ Years Experience</span>
+                        <span class="badge bg-primary-subtle text-primary">Board Certified</span>
+                    </div>
+                    
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard me-2 text-primary"></i>Education & Training
+                    </h6>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            MD from Harvard Medical School
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Dermatology Residency at Mayo Clinic
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Board Certified by the American Board of Dermatology
+                        </li>
+                    </ul>
+
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-star me-2 text-primary"></i>Specializations
+                    </h6>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Medical Dermatology</span>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Skin Cancer Detection</span>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Complex Skin Conditions</span>
+                    </div>
+
+                    <hr class="my-4">
+                    
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-calendar-check me-2 text-primary"></i>Availability
+                    </h6>
+                    <p class="text-muted mb-0">Available for consultations Monday through Friday. Special appointments available for urgent cases.</p>
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4">
+                    <a href="contact.html" class="btn btn-primary rounded-pill w-100">
+                        <i class="bi bi-calendar-check me-2"></i>Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="drChenModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-primary text-white border-0 px-4 py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white p-2 me-3">
+                            <i class="bi bi-person-circle text-primary h3 mb-0"></i>
+                        </div>
+                        <div>
+                            <h5 class="modal-title mb-1">Dr. Michael Chen</h5>
+                            <p class="mb-0 opacity-75">Cosmetic Dermatology Specialist</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <span class="badge bg-primary-subtle text-primary me-2">12+ Years Experience</span>
+                        <span class="badge bg-primary-subtle text-primary">Board Certified</span>
+                    </div>
+                    
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard me-2 text-primary"></i>Education & Training
+                    </h6>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Stanford University Medical School
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Advanced Cosmetic Training
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Board Certified Dermatologist
+                        </li>
+                    </ul>
+
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-star me-2 text-primary"></i>Specializations
+                    </h6>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Cosmetic Dermatology</span>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Laser Treatments</span>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Injectables & Fillers</span>
+                    </div>
+
+                    <hr class="my-4">
+                    
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-calendar-check me-2 text-primary"></i>Availability
+                    </h6>
+                    <p class="text-muted mb-0">Available for consultations Tuesday through Saturday. Evening appointments available for cosmetic procedures.</p>
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4">
+                    <a href="contact.html" class="btn btn-primary rounded-pill w-100">
+                        <i class="bi bi-calendar-check me-2"></i>Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="drRodriguezModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-primary text-white border-0 px-4 py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white p-2 me-3">
+                            <i class="bi bi-person-circle text-primary h3 mb-0"></i>
+                        </div>
+                        <div>
+                            <h5 class="modal-title mb-1">Dr. Emily Rodriguez</h5>
+                            <p class="mb-0 opacity-75">Pediatric Dermatologist</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <span class="badge bg-primary-subtle text-primary me-2">8+ Years Experience</span>
+                        <span class="badge bg-primary-subtle text-primary">Board Certified</span>
+                    </div>
+                    
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard me-2 text-primary"></i>Education & Training
+                    </h6>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Columbia University Medical
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Pediatric Dermatology Fellowship
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-check2-circle text-success me-2"></i>
+                            Board Certified in Pediatric Dermatology
+                        </li>
+                    </ul>
+
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-star me-2 text-primary"></i>Specializations
+                    </h6>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Pediatric Dermatology</span>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Childhood Skin Conditions</span>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Allergy & Eczema Treatment</span>
+                    </div>
+
+                    <hr class="my-4">
+                    
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-calendar-check me-2 text-primary"></i>Availability
+                    </h6>
+                    <p class="text-muted mb-0">Available for pediatric consultations Monday through Friday. Special arrangements available for young patients.</p>
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4">
+                    <a href="contact.html" class="btn btn-primary rounded-pill w-100">
+                        <i class="bi bi-calendar-check me-2"></i>Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Dermatology Clinic</h5>
+                    <address class="mb-0">
+                        <a href="https://maps.google.com/?q=123+Medical+Center+Drive,+City,+State+12345" target="_blank" class="text-light text-decoration-none hover-effect">
+                            123 Medical Center Drive<br>
+                            City, State 12345
+                        </a><br>
+                        <a href="tel:+5551234567" class="text-light text-decoration-none hover-effect">
+                            <i class="bi bi-telephone me-1"></i>
+                            (555) 123-4567
+                        </a>
+                    </address>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Hours</h5>
+                    <div class="business-hours">
+                        <a href="#" class="text-light text-decoration-none hover-effect d-block" data-bs-toggle="tooltip" data-bs-placement="left" title="Click to add to calendar">
+                            <span class="d-block">Monday - Friday: 9:00 AM - 5:00 PM</span>
+                            <span class="d-block">Saturday: 9:00 AM - 1:00 PM</span>
+                            <span class="d-block">Sunday: Closed</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Updated Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
